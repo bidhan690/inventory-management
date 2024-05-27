@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+      },
       colors: {
         site: {
           DEFAULT: "#1570EF",

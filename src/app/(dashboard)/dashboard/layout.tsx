@@ -15,7 +15,7 @@ const layout: React.FC<layoutProps> = async ({ children }) => {
         <MainNav className="lg:hidden" user={user} />
       </NavSheet>
       <div className="w-full flex flex-col">
-        <MainNav className="hidden lg:flex" user={user} />
+        <MainNav className=" hidden lg:flex" user={user} />
         {children}
       </div>
     </div>

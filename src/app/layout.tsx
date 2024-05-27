@@ -3,8 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { siteConfig } from "@/config/site";
-
-const inter = Inter({ subsets: ["latin"] });
+import { cn } from "@/lib/utils";
+import { inter } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: siteConfig.name,
@@ -22,7 +22,12 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className="min-h-screen bg-background font-sans antialiased">
+        <body
+          className={cn(
+            "min-h-screen bg-background font-sans antialiased",
+            inter.variable
+          )}
+        >
           {children}
         </body>
       </html>

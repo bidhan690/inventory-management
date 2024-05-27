@@ -28,7 +28,7 @@ const MainNav: React.FC<MainNavProps> = ({ className, user }) => {
   return (
     <div
       className={cn(
-        "h-full md:h-[100px] px-4 py-4 lg:py-0 flex justify-between gap-4 items-center ml-0",
+        "h-full md:h-[100px] sticky top-0 bg-white z-10 px-4 py-4 lg:py-0 flex justify-between gap-4 items-center ml-0",
         className
       )}
     >
